@@ -641,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04288DF6DABBA2E2423199C5 /* Pods-MatchingGame.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
@@ -661,6 +662,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 577C71F50428962D4C7814AF /* Pods-MatchingGame.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
@@ -681,7 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0BCDB3DF0E83D52C16B9A33 /* Pods-MatchingGameTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
@@ -704,7 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 793D8C441F0A0B2E210548AF /* Pods-MatchingGameTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
@@ -727,7 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A5B100624E31FC66CFA068E /* Pods-MatchingGame-MatchingGameUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
 				INFOPLIST_FILE = MatchingGameUITests/Info.plist;
@@ -748,7 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 515F67F64D68D43334825F81 /* Pods-MatchingGame-MatchingGameUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KW278547Y4;
 				INFOPLIST_FILE = MatchingGameUITests/Info.plist;
