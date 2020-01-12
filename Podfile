@@ -5,6 +5,7 @@ target 'MatchingGame' do
   use_frameworks!
 
   # Pods for MatchingGame
+  pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'SnapKit'
   pod 'PromiseKit'
   pod 'SwiftLint'
