@@ -14,6 +14,23 @@
 		6F06AD2F23CA65B20023276A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD2E23CA65B20023276A /* NetworkManager.swift */; };
 		6F06AD3123CA6EAA0023276A /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD3023CA6EAA0023276A /* ProductsResponse.swift */; };
 		6F06AD3323CB2B730023276A /* ShopifyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD3223CB2B730023276A /* ShopifyRoute.swift */; };
+		6F06AD3523CB3A920023276A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD3423CB3A920023276A /* Card.swift */; };
+		6F06AD4823CB3F7B0023276A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4523CB3F7B0023276A /* Router.swift */; };
+		6F06AD4923CB3F7B0023276A /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4623CB3F7B0023276A /* ModalNavigationRouter.swift */; };
+		6F06AD4A23CB3F7B0023276A /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4723CB3F7B0023276A /* AppDelegateRouter.swift */; };
+		6F06AD4C23CB400D0023276A /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4B23CB400C0023276A /* AppDependency.swift */; };
+		6F06AD4E23CB40230023276A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4D23CB40230023276A /* HomeCoordinator.swift */; };
+		6F06AD5023CB40360023276A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD4F23CB40360023276A /* Coordinator.swift */; };
+		6F06AD5723CB5ADF0023276A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD5323CB5ADF0023276A /* HomeViewController.swift */; };
+		6F06AD5823CB5ADF0023276A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD5423CB5ADF0023276A /* HomeViewModel.swift */; };
+		6F06AD5F23CB63ED0023276A /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F06AD5E23CB63ED0023276A /* HomeView.xib */; };
+		6F06AD6123CB63FE0023276A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6023CB63FE0023276A /* HomeView.swift */; };
+		6F06AD6323CB868C0023276A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6223CB868C0023276A /* Settings.swift */; };
+		6F06AD6523CB8E3F0023276A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6423CB8E3F0023276A /* UIViewController+Extensions.swift */; };
+		6F06AD6723CB90320023276A /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6623CB90320023276A /* CardService.swift */; };
+		6F06AD6A23CB9D370023276A /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6923CB9D370023276A /* GameCoordinator.swift */; };
+		6F06AD6C23CB9D730023276A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6B23CB9D730023276A /* GameViewController.swift */; };
+		6F06AD6E23CB9E350023276A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD6D23CB9E350023276A /* GameViewModel.swift */; };
 		6F4F4DB223CA43720077BECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DB123CA43720077BECB /* AppDelegate.swift */; };
 		6F4F4DB423CA43720077BECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DB323CA43720077BECB /* SceneDelegate.swift */; };
 		6F4F4DB623CA43720077BECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DB523CA43720077BECB /* ContentView.swift */; };
@@ -51,6 +68,23 @@
 		6F06AD2E23CA65B20023276A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6F06AD3023CA6EAA0023276A /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
 		6F06AD3223CB2B730023276A /* ShopifyRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyRoute.swift; sourceTree = "<group>"; };
+		6F06AD3423CB3A920023276A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6F06AD4523CB3F7B0023276A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		6F06AD4623CB3F7B0023276A /* ModalNavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationRouter.swift; sourceTree = "<group>"; };
+		6F06AD4723CB3F7B0023276A /* AppDelegateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
+		6F06AD4B23CB400C0023276A /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		6F06AD4D23CB40230023276A /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		6F06AD4F23CB40360023276A /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6F06AD5323CB5ADF0023276A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6F06AD5423CB5ADF0023276A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6F06AD5E23CB63ED0023276A /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		6F06AD6023CB63FE0023276A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6F06AD6223CB868C0023276A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		6F06AD6423CB8E3F0023276A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		6F06AD6623CB90320023276A /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		6F06AD6923CB9D370023276A /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		6F06AD6B23CB9D730023276A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6F06AD6D23CB9E350023276A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		6F4F4DAE23CA43720077BECB /* MatchingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4F4DB123CA43720077BECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		6F4F4DB323CA43720077BECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +161,36 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		6F06AD3623CB3E3F0023276A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6F06AD5323CB5ADF0023276A /* HomeViewController.swift */,
+				6F06AD5423CB5ADF0023276A /* HomeViewModel.swift */,
+				6F06AD5E23CB63ED0023276A /* HomeView.xib */,
+				6F06AD6023CB63FE0023276A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6F06AD3723CB3E470023276A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				6F06AD6B23CB9D730023276A /* GameViewController.swift */,
+				6F06AD6D23CB9E350023276A /* GameViewModel.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		6F06AD4423CB3F570023276A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				6F06AD4723CB3F7B0023276A /* AppDelegateRouter.swift */,
+				6F06AD4623CB3F7B0023276A /* ModalNavigationRouter.swift */,
+				6F06AD4523CB3F7B0023276A /* Router.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		6F4F4DA523CA43720077BECB = {
 			isa = PBXGroup;
 			children = (
@@ -152,11 +216,12 @@
 		6F4F4DB023CA43720077BECB /* MatchingGame */ = {
 			isa = PBXGroup;
 			children = (
-				6F4F4DEE23CA5F080077BECB /* Networking */,
 				6F4F4DE223CA46E00077BECB /* Application */,
 				6F4F4DB923CA43780077BECB /* Content */,
 				6F4F4DEB23CA5E540077BECB /* Coordinators */,
 				6F4F4DEA23CA5E4A0077BECB /* Models */,
+				6F4F4DEE23CA5F080077BECB /* Networking */,
+				6F06AD4423CB3F570023276A /* Routers */,
 				6F4F4DE323CA46F00077BECB /* Scenes */,
 				6F4F4DED23CA5EA70077BECB /* Services */,
 				6F4F4DEC23CA5E930077BECB /* Utilities+Extensions */,
@@ -197,6 +262,7 @@
 				6F4F4DBF23CA43780077BECB /* Info.plist */,
 				6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */,
 				6F4F4DB323CA43720077BECB /* SceneDelegate.swift */,
+				6F06AD4B23CB400C0023276A /* AppDependency.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -204,6 +270,8 @@
 		6F4F4DE323CA46F00077BECB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				6F06AD3723CB3E470023276A /* Game */,
+				6F06AD3623CB3E3F0023276A /* Home */,
 				6F4F4DB523CA43720077BECB /* ContentView.swift */,
 			);
 			path = Scenes;
@@ -212,6 +280,8 @@
 		6F4F4DEA23CA5E4A0077BECB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F06AD3423CB3A920023276A /* Card.swift */,
+				6F06AD6223CB868C0023276A /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +289,9 @@
 		6F4F4DEB23CA5E540077BECB /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				6F06AD4F23CB40360023276A /* Coordinator.swift */,
+				6F06AD4D23CB40230023276A /* HomeCoordinator.swift */,
+				6F06AD6923CB9D370023276A /* GameCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -226,6 +299,7 @@
 		6F4F4DEC23CA5E930077BECB /* Utilities+Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6F06AD6423CB8E3F0023276A /* UIViewController+Extensions.swift */,
 			);
 			path = "Utilities+Extensions";
 			sourceTree = "<group>";
@@ -233,6 +307,7 @@
 		6F4F4DED23CA5EA70077BECB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6F06AD6623CB90320023276A /* CardService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -369,6 +444,7 @@
 			files = (
 				6F4F4DE923CA49BF0077BECB /* LaunchScreen.storyboard in Resources */,
 				6F4F4DB823CA43780077BECB /* Assets.xcassets in Resources */,
+				6F06AD5F23CB63ED0023276A /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,13 +589,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F06AD5823CB5ADF0023276A /* HomeViewModel.swift in Sources */,
+				6F06AD4923CB3F7B0023276A /* ModalNavigationRouter.swift in Sources */,
 				6F4F4DB223CA43720077BECB /* AppDelegate.swift in Sources */,
+				6F06AD6A23CB9D370023276A /* GameCoordinator.swift in Sources */,
 				6F06AD2D23CA641D0023276A /* Route.swift in Sources */,
 				6F06AD3323CB2B730023276A /* ShopifyRoute.swift in Sources */,
+				6F06AD6123CB63FE0023276A /* HomeView.swift in Sources */,
+				6F06AD6523CB8E3F0023276A /* UIViewController+Extensions.swift in Sources */,
+				6F06AD6323CB868C0023276A /* Settings.swift in Sources */,
+				6F06AD6E23CB9E350023276A /* GameViewModel.swift in Sources */,
 				6F4F4DB423CA43720077BECB /* SceneDelegate.swift in Sources */,
+				6F06AD4823CB3F7B0023276A /* Router.swift in Sources */,
+				6F06AD5023CB40360023276A /* Coordinator.swift in Sources */,
+				6F06AD6723CB90320023276A /* CardService.swift in Sources */,
+				6F06AD4C23CB400D0023276A /* AppDependency.swift in Sources */,
 				6F06AD2F23CA65B20023276A /* NetworkManager.swift in Sources */,
+				6F06AD4E23CB40230023276A /* HomeCoordinator.swift in Sources */,
+				6F06AD5723CB5ADF0023276A /* HomeViewController.swift in Sources */,
 				6F06AD3123CA6EAA0023276A /* ProductsResponse.swift in Sources */,
 				6F4F4DB623CA43720077BECB /* ContentView.swift in Sources */,
+				6F06AD3523CB3A920023276A /* Card.swift in Sources */,
+				6F06AD6C23CB9D730023276A /* GameViewController.swift in Sources */,
+				6F06AD4A23CB3F7B0023276A /* AppDelegateRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

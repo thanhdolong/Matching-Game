@@ -17,6 +17,7 @@ struct ProductsResponse: Decodable {
 
     struct Image: Decodable {
         let id: Int
+        let productId: Int
         let width: Int
         let height: Int
         let src: URL

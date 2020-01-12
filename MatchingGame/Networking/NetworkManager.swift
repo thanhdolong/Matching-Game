@@ -12,31 +12,16 @@ import PromiseKit
 
 protocol NetworkManager: class {
     func fetchDecodable<T: Decodable>(type: T.Type, route: Route, decoder: JSONDecoder) -> Promise<T>
-    func fetch(route: Route) -> Promise<Any>
+}
+
+extension NetworkManager {
+    func fetchDecodable<T: Decodable>(type: T.Type, route: Route) -> Promise<T> {
+        return fetchDecodable(type: type, route: route, decoder: JSONDecoder())
+    }
 }
 
 class NetworkManagerImpl: NetworkManager {
-    func fetch(route: Route) -> Promise<Any> {
-        let result = Promise<Any> { seal in
-
-            AF.request(route).validate().responseJSON { (response) in
-
-                    switch response.result {
-                    case .success(let success):
-                        seal.fulfill(success)
-                    case .failure(let error):
-                        seal.reject(error)
-                    }
-                }
-            }
-
-            return result
-    }
-
-    private let urlSession = URLSession.shared
-
     func fetchDecodable<T: Decodable>(type: T.Type, route: Route, decoder: JSONDecoder = JSONDecoder()) -> Promise<T> {
-
         let result = Promise<T> { seal in
 
             AF.request(route).validate().responseDecodable(of: T.self,

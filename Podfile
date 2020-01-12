@@ -6,9 +6,11 @@ target 'MatchingGame' do
 
   # Pods for MatchingGame
   pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Swinject'
   pod 'SnapKit'
   pod 'PromiseKit'
   pod 'SwiftLint'
+  pod 'Kingfisher'
 
   target 'MatchingGameTests' do
     inherit! :search_paths

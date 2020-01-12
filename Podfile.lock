@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
   - Nimble (8.0.5)
   - PromiseKit (6.12.0):
     - PromiseKit/CorePromise (= 6.12.0)
@@ -13,32 +16,39 @@ PODS:
   - Quick (2.2.0)
   - SnapKit (5.0.1)
   - SwiftLint (0.38.2)
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - Kingfisher
   - Nimble
   - PromiseKit
   - Quick
   - SnapKit
   - SwiftLint
+  - Swinject
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
     - Nimble
     - PromiseKit
     - Quick
     - SnapKit
     - SwiftLint
+    - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 588e42b22d6ed29392b4321b606c20c104df3466
+PODFILE CHECKSUM: d8870368dbebf9547cda14e7e87af8c4d8a89ab0
 
 COCOAPODS: 1.8.4
