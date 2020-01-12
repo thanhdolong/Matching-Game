@@ -13,7 +13,7 @@ struct Card: Hashable {
     var identifier: Int
     var isFaceUp: Bool
     var isMatched: Bool
-    var image: UIImageView?
+    var imageURL: URL
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(identifier)
@@ -23,7 +23,6 @@ struct Card: Hashable {
         self.identifier = identifier
         self.isFaceUp = false
         self.isMatched = false
-        self.image?.kf.indicatorType = .activity
-        self.image?.kf.setImage(with: imageURL)
+        self.imageURL = imageURL
     }
 }

@@ -14,4 +14,12 @@ final class GameViewModel {
     func setCards(cards: [Card]) {
         self.cards = cards
     }
+
+    func numberOfRows() -> Int {
+        return cards.count
+    }
+
+    func getCard(for index: Int) -> Card {
+        return cards[index]
+    }
 }

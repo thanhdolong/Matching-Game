@@ -33,7 +33,7 @@ extension HomeCoordinator: HomeViewControllerDelegate {
     func homeViewControllerDidPressPlayButton(_ viewController: HomeViewController, cards: [Card]) {
         
         let router = ModalNavigationRouter(parentViewController: viewController)
-        let coordinator = GameCoordinator(router: router, container: container)
+        let coordinator = GameCoordinator(router: router, container: container, cards: cards)
         presentChild(coordinator, animated: true)
     }
 }
