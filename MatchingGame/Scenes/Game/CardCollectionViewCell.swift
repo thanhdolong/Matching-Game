@@ -36,6 +36,8 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
     }
 
     private func layout() {
+        layer.cornerRadius = 10
+        
         imageView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()

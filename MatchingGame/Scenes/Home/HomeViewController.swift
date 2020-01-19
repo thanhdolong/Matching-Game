@@ -17,6 +17,11 @@ final class HomeViewController: UIViewController {
 
     private var indicator: UIView?
 
+    var homeView: HomeView! {
+        guard isViewLoaded else { return nil }
+        return (view as! HomeView)
+    }
+
     // MARK: - View lifecycle
 
     init(homeViewModel: HomeViewModel) {
@@ -34,12 +39,14 @@ final class HomeViewController: UIViewController {
 
     @IBAction func cardsToMatchSlider(_ sender: UISlider) {
         let value = Int(sender.value)
+        homeView.numberOfCardsToMatchLabel.text = "Number of cards to match: \(value)"
         viewModel.setCardsToMatch(value)
     }
 
 
     @IBAction func matchToWinSlider(_ sender: UISlider) {
         let value = Int(sender.value)
+        homeView.numberOfMatchToWinLabel.text = "Number of match to win: \(value)"
         viewModel.setMatchToWin(value)
     }
 

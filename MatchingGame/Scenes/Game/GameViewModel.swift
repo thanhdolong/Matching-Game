@@ -41,7 +41,8 @@ final class GameViewModel {
     
     func chooseCard(at index: Int) {
         guard shuffledCard[index].isMatched == false else { return }
-        
+        flipCount = flipCount + 1
+
         if let identifierOfFaceUpCard = identifierOfFaceUpCard {
             shuffledCard[index].isFaceUp = true
             let faceUpCards = shuffledCard.filter { $0.isFaceUp }
