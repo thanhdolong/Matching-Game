@@ -47,5 +47,13 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
     func configureCell(card: Card) {
         imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: card.imageURL)
+        
+        if card.isFaceUp || card.isMatched {
+            backgroundColor = .red
+            imageView.isHidden = false
+        } else {
+            backgroundColor = .blue
+            imageView.isHidden = true
+        }
     }
 }

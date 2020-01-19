@@ -84,6 +84,7 @@ extension GameViewController: UICollectionViewDelegateFlowLayout {
 extension GameViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.chooseCard(at: indexPath.row)
+        collectionView.reloadData()
         print(viewModel.getCard(for: indexPath.row))
     }
 }
