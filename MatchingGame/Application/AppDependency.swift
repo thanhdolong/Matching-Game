@@ -31,17 +31,16 @@ final class AppDependency {
             HomeViewModel(cardService: resolver.resolve(CardService.self)!)
         }
 
-        container.register(GameViewModel.self) { _ in
-            GameViewModel()
+        container.register(GameViewModel.self) { _, cards, settings in
+            GameViewModel(cards: cards, settings: settings)
         }
 
         // MARK: - ViewControllers
         container.register(HomeViewController.self) { resolver in
             HomeViewController(homeViewModel: resolver.resolve(HomeViewModel.self)!)
         }
-
-        container.register(GameViewController.self) { resolver in
-            GameViewController(gameViewModel: resolver.resolve(GameViewModel.self)!)
+        container.register(GameViewController.self) { _, gameViewModel  in
+            GameViewController(gameViewModel: gameViewModel)
         }
     }
 }

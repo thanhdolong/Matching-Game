@@ -12,14 +12,15 @@ import Kingfisher
 
 protocol CardService: class {
     func getCards(amount: Int) -> Promise<[Card]>
-    var cards: [Card]? { get set }
+    var cards: [Card] { get set }
 }
 
 final class CardServiceImpl: CardService {
     private var networkManager: NetworkManager
-    var cards: [Card]?
+    var cards: [Card]
 
     init(networkManager: NetworkManager, cards: [Card] = []) {
+        self.cards = cards
         self.networkManager = networkManager
     }
 

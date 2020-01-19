@@ -19,7 +19,6 @@ final class GameViewController: UIViewController {
 
     init(gameViewModel: GameViewModel) {
         self.viewModel = gameViewModel
-        
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -29,6 +28,8 @@ final class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        viewModel.createGame()
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -81,5 +82,8 @@ extension GameViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension GameViewController: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.chooseCard(at: indexPath.row)
+        print(viewModel.getCard(for: indexPath.row))
+    }
 }

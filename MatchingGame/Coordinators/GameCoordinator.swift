@@ -15,18 +15,20 @@ final class GameCoordinator: Coordinator {
     let container: Container
     let router: Router
     let cards: [Card]
+    let settings: Settings
 
     // MARK: - Object Lifecycle
-    public init(router: Router, container: Container, cards: [Card]) {
+    public init(router: Router, container: Container, cards: [Card], settings: Settings) {
         self.router = router
         self.container = container
         self.cards = cards
+        self.settings = settings
     }
 
     // MARK: - Instance Methods
     public func present(animated: Bool, onDismissed: (() -> Void)?) {
-        let viewController = container.resolve(GameViewController.self)!
-        viewController.viewModel.setCards(cards: cards)
+        let viewModel = container.resolve(GameViewModel.self, arguments: cards, settings)!
+        let viewController = container.resolve(GameViewController.self, argument: viewModel)!
         router.present(viewController, animated: animated, onDismissed: onDismissed)
     }
 }
