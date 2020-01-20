@@ -1,17 +1,17 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
-  - Kingfisher (5.12.0):
-    - Kingfisher/Core (= 5.12.0)
-  - Kingfisher/Core (5.12.0)
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
   - Nimble (8.0.5)
-  - PromiseKit (6.12.0):
-    - PromiseKit/CorePromise (= 6.12.0)
-    - PromiseKit/Foundation (= 6.12.0)
-    - PromiseKit/UIKit (= 6.12.0)
-  - PromiseKit/CorePromise (6.12.0)
-  - PromiseKit/Foundation (6.12.0):
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.12.0):
+  - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
   - Quick (2.2.0)
   - SnapKit (5.0.1)
@@ -20,13 +20,13 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
-  - Kingfisher
-  - Nimble
-  - PromiseKit
-  - Quick
-  - SnapKit
-  - SwiftLint
-  - Swinject
+  - Kingfisher (~> 5.13.0)
+  - Nimble (~> 8.0.5)
+  - PromiseKit (~> 6.13.1)
+  - Quick (~> 2.2.0)
+  - SnapKit (~> 5.0.1)
+  - SwiftLint (~> 0.38.2)
+  - Swinject (~> 2.7.1)
 
 SPEC REPOS:
   trunk:
@@ -41,14 +41,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
-  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
-  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: bb9e45f1601ffc6ce18420ff66bb15e7d00a24f4
+PODFILE CHECKSUM: 89f2d5c84845779a05b19bce0ac3c9dd12408a6e
 
 COCOAPODS: 1.8.4
