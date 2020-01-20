@@ -51,10 +51,10 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
         imageView.kf.setImage(with: card.imageURL)
         
         if card.isFaceUp || card.isMatched {
-            backgroundColor = .red
+            backgroundColor = UIColor(named: "CardActiveColor")
             imageView.isHidden = false
         } else {
-            backgroundColor = .blue
+            backgroundColor = UIColor(named: "CardBackgroundColor")
             imageView.isHidden = true
         }
     }

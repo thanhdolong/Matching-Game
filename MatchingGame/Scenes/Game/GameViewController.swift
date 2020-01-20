@@ -69,6 +69,7 @@ final class GameViewController: UIViewController {
     func setupNavigationBar() {
         navigationItem.title = "Matches: \(viewModel.matchCount)/\(viewModel.gameSettings.matchToWin)"
         navigationItem.rightBarButtonItem = rightBarButtonItem
+        navigationController?.navigationBar.tintColor = UIColor(named: "DefaultTextColor")
     }
 
     @objc func shuffleTapped() {

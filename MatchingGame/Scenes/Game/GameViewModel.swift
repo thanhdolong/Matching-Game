@@ -59,7 +59,7 @@ final class GameViewModel {
     func getCard(for index: Int) -> Card {
         return shuffledCards[index]
     }
-    
+
     func chooseCard(at index: Int) {
         guard shuffledCards[index].isMatched == false else { return }
         flipCount = flipCount + 1
