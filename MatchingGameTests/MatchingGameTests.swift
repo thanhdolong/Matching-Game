@@ -65,7 +65,6 @@ class MatchingGameTests: QuickSpec {
                             }
                     }
 
-
                     expect(cards.count).to(equal(10))
                     expect(cards.first!.identifier).to(beAKindOf(Int.self))
                     expect(cards.first!.isFaceUp).to(be(false))

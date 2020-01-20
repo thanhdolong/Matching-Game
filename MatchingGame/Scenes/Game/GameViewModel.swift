@@ -39,7 +39,7 @@ final class GameViewModel {
         self.cards = cards
         self.gameSettings = settings
     }
-    
+
     func createGame() {
         shuffledCards.removeAll()
         for _ in 0..<gameSettings.cardsToMatch {
@@ -51,26 +51,26 @@ final class GameViewModel {
     func shuffleGame() {
         shuffledCards.shuffle()
     }
-    
+
     func numberOfRows() -> Int {
         return shuffledCards.count
     }
-    
+
     func getCard(for index: Int) -> Card {
         return shuffledCards[index]
     }
 
     func chooseCard(at index: Int) {
         guard shuffledCards[index].isMatched == false else { return }
-        flipCount = flipCount + 1
+        flipCount += 1
 
         if let identifierOfFaceUpCard = identifierOfFaceUpCard {
             shuffledCards[index].isFaceUp = true
             let faceUpCards = shuffledCards.filter { $0.isFaceUp }
 
-            if shuffledCards[index].identifier == identifierOfFaceUpCard  {
+            if shuffledCards[index].identifier == identifierOfFaceUpCard {
                 if faceUpCards.count == gameSettings.cardsToMatch {
-                    matchCount = matchCount + 1
+                    matchCount += 1
                     delegate?.didChangeMatches()
 
                     shuffledCards = shuffledCards.map({ card in
@@ -99,5 +99,5 @@ final class GameViewModel {
             self.identifierOfFaceUpCard = shuffledCards[index].identifier
         }
     }
-    
+
 }

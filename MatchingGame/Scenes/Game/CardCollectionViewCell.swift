@@ -21,11 +21,11 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
 
         setupUI()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setupUI() {
         arrangeSubviews()
         layout()
@@ -37,7 +37,7 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
 
     private func layout() {
         layer.cornerRadius = 10
-        
+
         imageView.snp.makeConstraints { make in
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
@@ -49,7 +49,7 @@ class CardCollectionViewCell: UICollectionViewCell, ReusableView {
     func configureCell(card: Card) {
         imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: card.imageURL)
-        
+
         if card.isFaceUp || card.isMatched {
             backgroundColor = UIColor(named: "CardActiveColor")
             imageView.isHidden = false

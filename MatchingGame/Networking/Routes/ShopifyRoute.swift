@@ -20,28 +20,27 @@ extension ShopifyRoute: Route {
 
     var method: HTTPMethod {
         switch self {
-            case .getProductImages:
-                return .get
+        case .getProductImages:
+            return .get
         }
     }
 
     var path: String {
         switch self {
-            case .getProductImages:
-                return "/products.json"
+        case .getProductImages:
+            return "/products.json"
         }
     }
 
     var parameters: Parameters? {
         switch self {
-            case .getProductImages(let limit):
-                return [
-                    "limit": String(limit),
-                    "fields": "image",
-                    "access_token": "c32313df0d0ef512ca64d5b336a0d7c6"
-                ]
+        case .getProductImages(let limit):
+            return [
+                "limit": String(limit),
+                "fields": "image",
+                "access_token": "c32313df0d0ef512ca64d5b336a0d7c6"
+            ]
         }
     }
-
 
 }

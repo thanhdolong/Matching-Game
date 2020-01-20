@@ -43,7 +43,6 @@ final class HomeViewController: UIViewController {
         viewModel.setCardsToMatch(value)
     }
 
-
     @IBAction func matchToWinSlider(_ sender: UISlider) {
         let value = Int(sender.value)
         homeView.numberOfMatchToWinLabel.text = "Number of match to win: \(value)"

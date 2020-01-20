@@ -31,7 +31,7 @@ final class HomeCoordinator: Coordinator {
 
 extension HomeCoordinator: HomeViewControllerDelegate {
     func homeViewControllerDidPressPlayButton(_ viewController: HomeViewController, cards: [Card]) {
-        
+
         let router = ModalNavigationRouter(parentViewController: viewController)
         let gameSettings = viewController.viewModel.getGameSettings()
         let coordinator = GameCoordinator(router: router, container: container, cards: cards, settings: gameSettings)
