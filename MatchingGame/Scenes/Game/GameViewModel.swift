@@ -8,49 +8,72 @@
 
 import Foundation
 
+protocol GameViewModelDelegate: class {
+    func didChangeMatches()
+    func didWinGame()
+    func reloadData()
+}
+
 final class GameViewModel {
     private var cards: [Card]
-    private var shuffledCard = [Card]()
-    
-    private(set) var flipCount: Int = 0
-    private(set) var score: Int = 0
+    private var shuffledCards = [Card]() {
+        didSet {
+            delegate?.reloadData()
+        }
+    }
+
     private(set) var gameSettings: Settings
     private(set) var identifierOfFaceUpCard: Int?
-    private(set) var shouldHideCard: Bool = false
-    
+    private(set) var flipCount: Int = 0
+    private(set) var matchCount: Int = 0 {
+        didSet {
+            if matchCount == gameSettings.matchToWin {
+                delegate?.didWinGame()
+            }
+        }
+    }
+
+    weak var delegate: GameViewModelDelegate?
+
     init(cards: [Card], settings: Settings) {
         self.cards = cards
         self.gameSettings = settings
     }
     
     func createGame() {
-        shuffledCard.removeAll()
+        shuffledCards.removeAll()
         for _ in 0..<gameSettings.cardsToMatch {
-            shuffledCard.append(contentsOf: cards)
+            shuffledCards.append(contentsOf: cards)
         }
-        shuffledCard.shuffle()
+        shuffledCards.shuffle()
+    }
+
+    func shuffleGame() {
+        shuffledCards.shuffle()
     }
     
     func numberOfRows() -> Int {
-        return shuffledCard.count
+        return shuffledCards.count
     }
     
     func getCard(for index: Int) -> Card {
-        return shuffledCard[index]
+        return shuffledCards[index]
     }
     
     func chooseCard(at index: Int) {
-        guard shuffledCard[index].isMatched == false else { return }
+        guard shuffledCards[index].isMatched == false else { return }
         flipCount = flipCount + 1
 
         if let identifierOfFaceUpCard = identifierOfFaceUpCard {
-            shuffledCard[index].isFaceUp = true
-            let faceUpCards = shuffledCard.filter { $0.isFaceUp }
+            shuffledCards[index].isFaceUp = true
+            let faceUpCards = shuffledCards.filter { $0.isFaceUp }
 
-            if shuffledCard[index].identifier == identifierOfFaceUpCard  {
+            if shuffledCards[index].identifier == identifierOfFaceUpCard  {
                 if faceUpCards.count == gameSettings.cardsToMatch {
+                    matchCount = matchCount + 1
+                    delegate?.didChangeMatches()
 
-                    shuffledCard = shuffledCard.map({ card in
+                    shuffledCards = shuffledCards.map({ card in
                         guard card.isFaceUp else { return card }
 
                         var card = card
@@ -66,14 +89,14 @@ final class GameViewModel {
             }
 
         } else {
-            shuffledCard = shuffledCard.map({ card in
+            shuffledCards = shuffledCards.map({ card in
                 var card = card
                 card.isFaceUp = false
                 return card
             })
 
-            shuffledCard[index].isFaceUp = true
-            self.identifierOfFaceUpCard = shuffledCard[index].identifier
+            shuffledCards[index].isFaceUp = true
+            self.identifierOfFaceUpCard = shuffledCards[index].identifier
         }
     }
     

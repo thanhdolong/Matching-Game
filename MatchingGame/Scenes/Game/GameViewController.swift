@@ -14,6 +14,7 @@ final class GameViewController: UIViewController {
 
     // MARK: - UI
     private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    private let rightBarButtonItem = UIBarButtonItem()
 
     // MARK: - View lifecycle
 
@@ -29,6 +30,7 @@ final class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel.delegate = self
         viewModel.createGame()
 
         collectionView.dataSource = self
@@ -37,11 +39,16 @@ final class GameViewController: UIViewController {
         setupUI()
         arrangeSubviews()
         layout()
+        setupNavigationBar()
     }
 
     func setupUI() {
         view.backgroundColor = UIColor(named: "BackgroundColor")
         collectionView.backgroundColor = UIColor(named: "BackgroundColor")
+
+        rightBarButtonItem.title = "Shuffle"
+        rightBarButtonItem.action = #selector(shuffleTapped)
+        rightBarButtonItem.target = self
 
         collectionView.register(CardCollectionViewCell.self, forCellWithReuseIdentifier: CardCollectionViewCell.reuseIdentifier)
     }
@@ -57,6 +64,15 @@ final class GameViewController: UIViewController {
             make.leading.equalTo(view.safeAreaLayoutGuide).offset(16)
             make.trailing.equalTo(view.safeAreaLayoutGuide).offset(-16)
         }
+    }
+
+    func setupNavigationBar() {
+        navigationItem.title = "Matches: \(viewModel.matchCount)/\(viewModel.gameSettings.matchToWin)"
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+
+    @objc func shuffleTapped() {
+        viewModel.shuffleGame()
     }
 }
 
@@ -84,6 +100,27 @@ extension GameViewController: UICollectionViewDelegateFlowLayout {
 extension GameViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.chooseCard(at: indexPath.row)
+    }
+}
+
+extension GameViewController: GameViewModelDelegate {
+    func reloadData() {
         collectionView.reloadData()
+    }
+
+    func didWinGame() {
+       showScore()
+    }
+
+    private func showScore() {
+        let restartAction = UIAlertAction(title: "Restart the game", style: .default) { [unowned self] _ in
+            self.viewModel.createGame()
+        }
+
+        presentAlertAction(withTitle: "You won the game", message: "You made \(viewModel.flipCount) flips. 🙌", alertActions: [restartAction])
+    }
+
+    func didChangeMatches() {
+        navigationItem.title = "Matches: \(viewModel.matchCount)/\(viewModel.gameSettings.matchToWin)"
     }
 }
