@@ -7,28 +7,73 @@
 //
 
 import XCTest
+import Quick
+import Nimble
+import PromiseKit
+import Swinject
+
 @testable import MatchingGame
 
-class MatchingGameTests: XCTestCase {
+class MatchingGameTests: QuickSpec {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    override func spec() {
+        var container: Container!
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        beforeEach {
+            container = Container()
+            container.register(NetworkManager.self) { _ in NetworkManagerImpl()}
+            container.register(CardService.self) { resolver in
+                CardServiceImpl(networkManager: resolver.resolve(NetworkManager.self)!)
+            }
+        }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        describe("Card service") {
+            context("when request images from shopify service") {
+                it("should correctly parse data") {
+                    guard let fileUrl = Bundle(for: type(of: self)).path(forResource: "ProductResponse", ofType: "json") else {
+                        return fail("ProductResponse.json not found")
+                    }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: fileUrl), options: .alwaysMapped)
+
+                        let decoder: JSONDecoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+                        let response = try decoder.decode(ProductsResponse.self, from: data)
+                        expect(response.products).toNot(beNil())
+                        expect(response.products.count).to(equal(50))
+                        expect(response.products[1].image.src).to(beAKindOf(URL.self))
+                    } catch {
+                        fail("Cannot parsing JSON file: \(error)")
+                    }
+
+                }
+
+                it("should return data") {
+                    let fetcher = container.resolve(CardService.self)!
+                    var cards = [Card]()
+
+                    waitUntil(timeout: 10) { done in
+                        fetcher.getCards(amount: 10)
+                            .done { response in
+                                cards = response
+                                done()
+                            }
+                            .catch { error in
+                                fail("\(error)")
+                            }
+                    }
+
+
+                    expect(cards.count).to(equal(10))
+                    expect(cards.first!.identifier).to(beAKindOf(Int.self))
+                    expect(cards.first!.isFaceUp).to(be(false))
+                    expect(cards.first!.isMatched).to(be(false))
+                    expect(cards.first!.imageURL).to(beAKindOf(URL.self))
+
+                }
+            }
         }
     }
-
 }
