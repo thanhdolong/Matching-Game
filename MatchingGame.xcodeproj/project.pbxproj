@@ -39,6 +39,7 @@
 		6F4F4DC923CA43790077BECB /* MatchingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DC823CA43790077BECB /* MatchingGameTests.swift */; };
 		6F4F4DE923CA49BF0077BECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */; };
 		6F4FF56523D53F8200A64C3C /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FF56423D53F8200A64C3C /* ProductResponse.json */; };
+		6F4FF56823D561EA00A64C3C /* Shopify.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FF56723D561EA00A64C3C /* Shopify.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		6F4F4DCA23CA43790077BECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F4FF56423D53F8200A64C3C /* ProductResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
+		6F4FF56723D561EA00A64C3C /* Shopify.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Shopify.plist; sourceTree = "<group>"; };
 		793D8C441F0A0B2E210548AF /* Pods-MatchingGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingGameTests.release.xcconfig"; path = "Target Support Files/Pods-MatchingGameTests/Pods-MatchingGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0BCDB3DF0E83D52C16B9A33 /* Pods-MatchingGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingGameTests.debug.xcconfig"; path = "Target Support Files/Pods-MatchingGameTests/Pods-MatchingGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8673C0D26BB70A21D064F94 /* Pods_MatchingGame_MatchingGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingGame_MatchingGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +242,7 @@
 				6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */,
 				6F4F4DB323CA43720077BECB /* SceneDelegate.swift */,
 				6F06AD4B23CB400C0023276A /* AppDependency.swift */,
+				6F4FF56723D561EA00A64C3C /* Shopify.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4F4DE923CA49BF0077BECB /* LaunchScreen.storyboard in Resources */,
+				6F4FF56823D561EA00A64C3C /* Shopify.plist in Resources */,
 				6F4F4DB823CA43780077BECB /* Assets.xcassets in Resources */,
 				6F06AD5F23CB63ED0023276A /* HomeView.xib in Resources */,
 			);

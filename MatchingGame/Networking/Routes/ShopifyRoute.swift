@@ -32,13 +32,19 @@ extension ShopifyRoute: Route {
         }
     }
 
+    var accessToken: String {
+        let file = Bundle.main.path(forResource: "Shopify", ofType: "plist")!
+        let dictionary = NSDictionary(contentsOfFile: file)!
+        return dictionary["accessToken"] as! String
+    }
+
     var parameters: Parameters? {
         switch self {
         case .getProductImages(let limit):
             return [
                 "limit": String(limit),
                 "fields": "image",
-                "access_token": "c32313df0d0ef512ca64d5b336a0d7c6"
+                "access_token": accessToken
             ]
         }
     }
