@@ -46,6 +46,7 @@ final class GameViewModel {
             shuffledCards.append(contentsOf: cards)
         }
         shuffledCards.shuffle()
+        delegate?.didChangeMatches()
     }
 
     func shuffleGame() {
