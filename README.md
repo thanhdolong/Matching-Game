@@ -1,10 +1,11 @@
 # 🥇 Matching game  iOS app
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/) ![Platform: iOS](https://img.shields.io/badge/Deploynment%20Target-iOS%2013.0+-lightgrey.svg)
 
-![Screenshots](#)
+![Screenshot 1](https://i.imgur.com/VNGor6E.png)
+![Screenshot 2](https://i.imgur.com/jbC9UQp.png)
 
 ## ✍️ About
-Memory matching mobile app for iOS. The whole app supports both portrait and landscape UI orientations as well as support for all iOS-related size classes (iPhone & iPad), and dark mode appearance. Project is written in MVVM-C (Model-View-ViewModel Coordinator) architecture.  
+Memory matching mobile app for iOS. The whole app supports both portrait and landscape UI orientations as well as support for all iOS-related size classes (iPhone & iPad), and dark mode appearance. Project is written in MVVM-C (Model-View-ViewModel Coordinator) architecture.  Project contain tests.
 
 ### Additional Features
 1) Game is configurable to match 3 or 4 of the same products instead of 2.
