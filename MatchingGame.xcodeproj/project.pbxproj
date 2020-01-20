@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44120320C655F92FDC11F661 /* Pods_MatchingGame_MatchingGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8673C0D26BB70A21D064F94 /* Pods_MatchingGame_MatchingGameUITests.framework */; };
 		60D5181E81AC069C9ACBA1A4 /* Pods_MatchingGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D19123CA90BD467E8B4835 /* Pods_MatchingGame.framework */; };
 		6504A9028CB2296399D2B33E /* Pods_MatchingGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C10FA91AD65A02D657B74 /* Pods_MatchingGameTests.framework */; };
 		6F06AD2D23CA641D0023276A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F06AD2C23CA641D0023276A /* Route.swift */; };
@@ -38,19 +37,12 @@
 		6F4F4DB623CA43720077BECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DB523CA43720077BECB /* ContentView.swift */; };
 		6F4F4DB823CA43780077BECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F4DB723CA43780077BECB /* Assets.xcassets */; };
 		6F4F4DC923CA43790077BECB /* MatchingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DC823CA43790077BECB /* MatchingGameTests.swift */; };
-		6F4F4DD423CA43790077BECB /* MatchingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F4DD323CA43790077BECB /* MatchingGameUITests.swift */; };
 		6F4F4DE923CA49BF0077BECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */; };
+		6F4FF56023D5353300A64C3C /* ProductResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F4FF55F23D5353300A64C3C /* ProductResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6F4F4DC523CA43790077BECB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F4F4DA623CA43720077BECB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F4F4DAD23CA43720077BECB;
-			remoteInfo = MatchingGame;
-		};
-		6F4F4DD023CA43790077BECB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6F4F4DA623CA43720077BECB /* Project object */;
 			proxyType = 1;
@@ -98,10 +90,8 @@
 		6F4F4DC423CA43790077BECB /* MatchingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4F4DC823CA43790077BECB /* MatchingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGameTests.swift; sourceTree = "<group>"; };
 		6F4F4DCA23CA43790077BECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F4F4DCF23CA43790077BECB /* MatchingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F4F4DD323CA43790077BECB /* MatchingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGameUITests.swift; sourceTree = "<group>"; };
-		6F4F4DD523CA43790077BECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F4F4DE823CA49BF0077BECB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F4FF55F23D5353300A64C3C /* ProductResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductResponse.json; sourceTree = "<group>"; };
 		793D8C441F0A0B2E210548AF /* Pods-MatchingGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingGameTests.release.xcconfig"; path = "Target Support Files/Pods-MatchingGameTests/Pods-MatchingGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0BCDB3DF0E83D52C16B9A33 /* Pods-MatchingGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingGameTests.debug.xcconfig"; path = "Target Support Files/Pods-MatchingGameTests/Pods-MatchingGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8673C0D26BB70A21D064F94 /* Pods_MatchingGame_MatchingGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingGame_MatchingGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,14 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6504A9028CB2296399D2B33E /* Pods_MatchingGameTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F4F4DCC23CA43790077BECB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44120320C655F92FDC11F661 /* Pods_MatchingGame_MatchingGameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				6F06AD3023CA6EAA0023276A /* ProductsResponse.swift */,
+				6F4FF55F23D5353300A64C3C /* ProductResponse.json */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -201,7 +184,6 @@
 			children = (
 				6F4F4DB023CA43720077BECB /* MatchingGame */,
 				6F4F4DC723CA43790077BECB /* MatchingGameTests */,
-				6F4F4DD223CA43790077BECB /* MatchingGameUITests */,
 				6F4F4DAF23CA43720077BECB /* Products */,
 				4031F8B82E553A319CD544CC /* Pods */,
 				B5C42F093D5F3C0421B76D64 /* Frameworks */,
@@ -213,7 +195,6 @@
 			children = (
 				6F4F4DAE23CA43720077BECB /* MatchingGame.app */,
 				6F4F4DC423CA43790077BECB /* MatchingGameTests.xctest */,
-				6F4F4DCF23CA43790077BECB /* MatchingGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,15 +230,6 @@
 				6F4F4DCA23CA43790077BECB /* Info.plist */,
 			);
 			path = MatchingGameTests;
-			sourceTree = "<group>";
-		};
-		6F4F4DD223CA43790077BECB /* MatchingGameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6F4F4DD323CA43790077BECB /* MatchingGameUITests.swift */,
-				6F4F4DD523CA43790077BECB /* Info.plist */,
-			);
-			path = MatchingGameUITests;
 			sourceTree = "<group>";
 		};
 		6F4F4DE223CA46E00077BECB /* Application */ = {
@@ -380,26 +352,6 @@
 			productReference = 6F4F4DC423CA43790077BECB /* MatchingGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6F4F4DCE23CA43790077BECB /* MatchingGameUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F4F4DDE23CA43790077BECB /* Build configuration list for PBXNativeTarget "MatchingGameUITests" */;
-			buildPhases = (
-				AE972CFE800BBF2FDBE0272A /* [CP] Check Pods Manifest.lock */,
-				6F4F4DCB23CA43790077BECB /* Sources */,
-				6F4F4DCC23CA43790077BECB /* Frameworks */,
-				6F4F4DCD23CA43790077BECB /* Resources */,
-				F1B39F440FD9D4796057F9D9 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6F4F4DD123CA43790077BECB /* PBXTargetDependency */,
-			);
-			name = MatchingGameUITests;
-			productName = MatchingGameUITests;
-			productReference = 6F4F4DCF23CA43790077BECB /* MatchingGameUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -414,10 +366,6 @@
 						CreatedOnToolsVersion = 11.3;
 					};
 					6F4F4DC323CA43790077BECB = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 6F4F4DAD23CA43720077BECB;
-					};
-					6F4F4DCE23CA43790077BECB = {
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = 6F4F4DAD23CA43720077BECB;
 					};
@@ -438,7 +386,6 @@
 			targets = (
 				6F4F4DAD23CA43720077BECB /* MatchingGame */,
 				6F4F4DC323CA43790077BECB /* MatchingGameTests */,
-				6F4F4DCE23CA43790077BECB /* MatchingGameUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4FF56023D5353300A64C3C /* ProductResponse.json in Resources */,
 				6F4F4DE923CA49BF0077BECB /* LaunchScreen.storyboard in Resources */,
 				6F4F4DB823CA43780077BECB /* Assets.xcassets in Resources */,
 				6F06AD5F23CB63ED0023276A /* HomeView.xib in Resources */,
@@ -455,13 +403,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6F4F4DC223CA43790077BECB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F4F4DCD23CA43790077BECB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,28 +473,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE972CFE800BBF2FDBE0272A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MatchingGame-MatchingGameUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EFC0DCD74A3635746B613B92 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,23 +488,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingGame/Pods-MatchingGame-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1B39F440FD9D4796057F9D9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MatchingGame-MatchingGameUITests/Pods-MatchingGame-MatchingGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MatchingGame-MatchingGameUITests/Pods-MatchingGame-MatchingGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatchingGame-MatchingGameUITests/Pods-MatchingGame-MatchingGameUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -631,14 +533,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F4F4DCB23CA43790077BECB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6F4F4DD423CA43790077BECB /* MatchingGameUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -646,11 +540,6 @@
 			isa = PBXTargetDependency;
 			target = 6F4F4DAD23CA43720077BECB /* MatchingGame */;
 			targetProxy = 6F4F4DC523CA43790077BECB /* PBXContainerItemProxy */;
-		};
-		6F4F4DD123CA43790077BECB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6F4F4DAD23CA43720077BECB /* MatchingGame */;
-			targetProxy = 6F4F4DD023CA43790077BECB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -857,48 +746,6 @@
 			};
 			name = Release;
 		};
-		6F4F4DDF23CA43790077BECB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A5B100624E31FC66CFA068E /* Pods-MatchingGame-MatchingGameUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KW278547Y4;
-				INFOPLIST_FILE = MatchingGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = xdolon00.MatchingGameUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MatchingGame;
-			};
-			name = Debug;
-		};
-		6F4F4DE023CA43790077BECB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 515F67F64D68D43334825F81 /* Pods-MatchingGame-MatchingGameUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KW278547Y4;
-				INFOPLIST_FILE = MatchingGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = xdolon00.MatchingGameUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MatchingGame;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -925,15 +772,6 @@
 			buildConfigurations = (
 				6F4F4DDC23CA43790077BECB /* Debug */,
 				6F4F4DDD23CA43790077BECB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F4F4DDE23CA43790077BECB /* Build configuration list for PBXNativeTarget "MatchingGameUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6F4F4DDF23CA43790077BECB /* Debug */,
-				6F4F4DE023CA43790077BECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

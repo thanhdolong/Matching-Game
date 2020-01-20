@@ -19,8 +19,4 @@ target 'MatchingGame' do
     pod 'Nimble'
   end
 
-  target 'MatchingGameUITests' do
-    # Pods for testing
-  end
-
 end
